@@ -4,3 +4,27 @@ body{
     padding:0;
     margin:0;
 }
+
+
+.container{
+    max-width:1400px;
+    margin:0 auto;
+}
+
+.teaser{
+    font-size:1.4rem;
+    font-family: 'Helvetica';
+}
+
+
+.custom-btn{
+    border:none;
+    border-radius:50px;
+    padding:1rem 2rem;
+    cursor:pointer;
+    transition: box-shadow 0.225s ease-in-out;
+}
+
+.custom-btn:hover{
+    box-shadow: 0 5px 5px lightgrey;
+}
