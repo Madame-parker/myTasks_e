@@ -1,0 +1,29 @@
+
+.input-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input{
+    width:100%;
+    font-size:1.2rem;
+    padding:0.5rem 0;
+    outline: none;
+    border:1px solid lightgrey;
+}
+
+.custom-btn{
+    margin-left:2rem;
+}
+
+@media (max-width:480px){
+    .input-container{
+        flex-direction: column;
+    }
+
+    .custom-btn{
+        margin-left:0;
+        margin-top:2rem;
+    }
+}

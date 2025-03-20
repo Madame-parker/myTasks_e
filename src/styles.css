@@ -8,6 +8,7 @@ body{
 
 .container{
     max-width:1400px;
+    padding:3rem;
     margin:0 auto;
 }
 
@@ -29,4 +30,10 @@ body{
 
 .custom-btn:hover{
     box-shadow: 0 5px 5px lightgrey;
+}
+
+@media (max-width:480px){
+    .container{
+        padding:1.5rem;
+    }
 }
