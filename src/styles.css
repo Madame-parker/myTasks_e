@@ -16,7 +16,6 @@ body{
     font-family: 'Helvetica';
 }
 
-
 .custom-btn{
     border:none;
     border-radius:50px;
@@ -25,6 +24,7 @@ body{
     transition: box-shadow 0.225s ease-in-out;
     background-color: #982ae7;
     color:#fff;
+    min-width:100px;
 }
 
 .custom-btn:hover{

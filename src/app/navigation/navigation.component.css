@@ -28,7 +28,7 @@ img{
     width:100%;
 }
 
-@media (max-width:500px){
+@media (max-width:480px){
     .navigation-image-container{
         display:none;
     }
