@@ -32,6 +32,11 @@ body{
     box-shadow: 0 5px 5px lightgrey;
 }
 
+
+.bg-dark{
+    background-color:#353535;
+}
+
 @media (max-width:480px){
     .container{
         padding:1.5rem;
