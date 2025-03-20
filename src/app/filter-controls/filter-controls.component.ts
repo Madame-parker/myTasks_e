@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './filter-controls.component.css'
 })
 export class FilterControlsComponent {
-
+  
 }

@@ -23,6 +23,8 @@ body{
     padding:1rem 2rem;
     cursor:pointer;
     transition: box-shadow 0.225s ease-in-out;
+    background-color: #982ae7;
+    color:#fff;
 }
 
 .custom-btn:hover{
