@@ -11,3 +11,12 @@ h3{
     color:#d3d3d3;
 }
 
+.list-group{
+    display:flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction:column;
+    list-style-type: none;
+    padding:0;
+    margin:2rem 0;
+}
