@@ -1,4 +1,7 @@
 .list-item{
+    display:flex;
+    justify-content: flex-start;
+    align-items:center;
     padding:1rem 0;
     font-size:1.2rem;
 }
@@ -6,4 +9,51 @@
 .task-text{
     min-width:200px;
     padding:0 2rem;
+}
+
+input[type="checkbox"]{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    appearance: none;
+    width:30px;
+    height:30px;
+    border :1px solid lightgrey;
+    border-radius:4px;
+    cursor: pointer;
+    transition: all 0.225s ease-in-out;
+}
+
+input[type="checkbox"]:checked{
+    background-color: #982ae7; /* Violetter Hintergrund */
+    border-color: #982ae7;
+    position: relative;
+}
+
+input[type="checkbox"]:checked::after {
+    content: "✔"; 
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 0px;
+    left: 5px;
+}
+
+.text-stroked{
+    text-decoration: line-through;
+}
+
+
+@media (max-width:600px){
+    .task-text{
+        min-width:100px;
+        text-align:left;
+        padding:0;
+    }
+
+    .list-item{
+        justify-content: space-between;
+        width:100%;
+    }
 }

@@ -1,6 +1,7 @@
 import { Component, inject, } from '@angular/core';
 import { TasksService } from '../services/tasks.service';
 import { TaskListItemComponent } from "./task-list-item/task-list-item.component";
+import { Task } from '../models/task';
 
 @Component({
   selector: 'app-task-list',
@@ -9,7 +10,12 @@ import { TaskListItemComponent } from "./task-list-item/task-list-item.component
   styleUrl: './task-list.component.css'
 })
 export class TaskListComponent {
-  tasks = inject(TasksService).getAllTasks()
+  taskService = inject(TasksService)
+  tasks = this.taskService.getAllTasks()
 
 
+
+  changeTaskStatus(task: Task){
+    this.taskService.updateTask(task)
+  }
 }
