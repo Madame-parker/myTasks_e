@@ -14,8 +14,11 @@ export class TaskListComponent {
   tasks = this.taskService.getAllTasks()
 
 
-
   changeTaskStatus(task: Task){
     this.taskService.updateTask(task)
+  }
+
+  deleteTask(task: Task){
+    this.taskService.deleteTask(task)
   }
 }

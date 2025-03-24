@@ -25,4 +25,10 @@ export class TasksService {
     this.tasks.splice(taskIndex, 1)
     this.tasks.splice(taskIndex, 0, updatedTask!)
   }
+
+  
+  deleteTask(deleteTask: Task){
+    let taskIndex = this.tasks.findIndex((task : Task) => task.id === deleteTask.id)
+    this.tasks.splice(taskIndex, 1)
+  }
 }

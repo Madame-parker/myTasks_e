@@ -7,7 +7,7 @@
         <ul class="list-group">
             @if(tasks){
                 @for(task of tasks; track task.id){
-                    <app-task-list-item style="width:100%;" [task]="task" (toggleTaskEvent)="changeTaskStatus(task)"></app-task-list-item>
+                    <app-task-list-item style="width:100%;" [task]="task" (toggleTaskEvent)="changeTaskStatus(task)" (deleteTask)="deleteTask(task)"></app-task-list-item>
                 }
             }
         </ul>
