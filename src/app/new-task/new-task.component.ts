@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, viewChild } from '@angular/core';
 
 @Component({
   selector: 'app-new-task',
@@ -7,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrl: './new-task.component.css'
 })
 export class NewTaskComponent {
+  inputReference = viewChild<ElementRef<HTMLInputElement>>('inputTaskFields')
+
+  addTask(){
+    let taskvalue = this.inputReference()!.nativeElement
+      
+  }
 
 }
